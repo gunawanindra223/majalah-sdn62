@@ -162,10 +162,10 @@ ${fig(27,'Deretan karya siswa di atas meja kelas')}
 <div class="quote">“Prestasi besar selalu berawal dari kebiasaan kecil yang dijaga bersama.”</div>
 `,
 `<div style="margin:auto 0;text-align:center;display:flex;flex-direction:column;gap:.8em;align-items:center">${ic('heart')}<h3>Terima Kasih</h3><div class="rule"></div><p>Kepada seluruh siswa, guru, tenaga kependidikan, orang tua, dan Puskesmas Rejosari yang telah mewarnai kegiatan sekolah.</p><p style="font-size:.85em">Majalah Digital SD Negeri 62 Pekanbaru<br>Edisi Perdana · September 2026</p></div>`,
-`<div style="margin:auto;text-align:center;display:flex;flex-direction:column;gap:.7em;align-items:center"><div class="cov emb" style="all:unset;width:4em;height:4em;border-radius:50%;background:var(--gold);color:var(--g);display:grid;place-items:center">${ic('book')}</div><h3>SD Negeri 62 Pekanbaru</h3><p>Cerdas · Sehat · Beriman · Berprestasi</p></div>`
+`<div style="margin:auto;text-align:center;display:flex;flex-direction:column;gap:.7em;align-items:center"><div style="width:4em;height:4em;border-radius:50%;background:var(--gold);color:var(--g);display:grid;place-items:center">${ic('book')}</div><h3>SD Negeri 62 Pekanbaru</h3><p>Cerdas · Sehat · Beriman · Berprestasi</p></div>`
 ];
 const T=P.length,dk=[T-2,T-1];
-const face=(i,c)=>`<div class="${(i==0||i==15)?'':'pg '}${dk.includes(i)?'dark':''}" style="${(i==0)?'':'position:absolute;inset:0'}">${c}${(i>0&&i<T-1)?`<div class="fn"><span>SDN 62 Pekanbaru</span><span>${i+1}</span></div>`:''}</div>`;
+const face=(i,c)=>`<div class="${i==0?'':'pg '}${dk.includes(i)?'dark':''}" style="${(i==0)?'':'position:absolute;inset:0'}">${c}${(i>0&&i<T-1)?`<div class="fn"><span>SDN 62 Pekanbaru</span><span>${i+1}</span></div>`:''}</div>`;
 const book=document.getElementById('book'),lab=document.getElementById('lab');
 let mode,leaves=[],fl=0,N=0,pw=0,iv;
 document.getElementById('toc').innerHTML=ic('list')+' Isi';
